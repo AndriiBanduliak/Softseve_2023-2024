@@ -4,7 +4,7 @@ from pyowm import OWM
 
 HEIGHT = 350
 WIDTH = 450
-API_KEY = 'ef2206ff5da67de63306d0b143e20872'
+API_KEY = '' #your API key
 
 root = tk.Tk()
 owm = OWM(API_KEY)
