@@ -350,7 +350,18 @@ Write a list comprehension function `celsius_to_fahrenheit(temps)` whose input p
 Hint: The Fahrenheit to Celsius conversion formula is given by \( F = (C \times \frac{9}{5}) + 32 \).
 
 
+# Task 13.2
 
+## Problem Description
+
+Write a function `celsius_to_fahrenheit(temps)` using the `map` function whose input parameter is a list of temperatures in Celsius. The function returns a new array where temperatures are converted to Fahrenheit.
+
+Hint: The Fahrenheit to Celsius conversion formula is given by \( F = (C \times \frac{9}{5}) + 32 \).
+
+# TASK 13.3
+
+## Problem Description
+Write a generator function that returns all combinations of two lists.
 
 
 
