@@ -341,6 +341,28 @@ The function returns the result of dividing two numbers.
 
 Note: in the function, you must use the try-except construct.
 
+# TASK 14.1
+
+## Problem Description
+
+You have two JSON files, `cars.json` and `cars2.json`, containing information about car models and their maximum speeds. Your task is to read both files, combine the data, and write a sorted array of cars based on their maximum speeds to a new JSON file named `result.json`.
+
+## Instructions
+
+1. Read data from the following input files:
+   - `cars.json`: Contains an array of car models with the field `max_speed`.
+   - `cars2.json`: Contains a single car object with a random `max_speed`.
+
+2. Combine the data from both files into a single list of cars.
+
+3. Sort the list of cars by their `max_speed` field.
+
+4. Write the sorted array to a new JSON file named `result.json`.
+
+
+
+
+
 
 
 
