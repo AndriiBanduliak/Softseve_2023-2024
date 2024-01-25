@@ -341,6 +341,19 @@ The function returns the result of dividing two numbers.
 
 Note: in the function, you must use the try-except construct.
 
+# Task 13.1
+
+## Celsius to Fahrenheit Conversion
+
+Write a list comprehension function `celsius_to_fahrenheit(temps)` whose input parameter is a list of temperatures in Celsius. The function returns a new array where temperatures are converted to Fahrenheit.
+
+Hint: The Fahrenheit to Celsius conversion formula is given by \( F = (C \times \frac{9}{5}) + 32 \).
+
+
+
+
+
+
 # TASK 14.1
 
 ## Problem Description
