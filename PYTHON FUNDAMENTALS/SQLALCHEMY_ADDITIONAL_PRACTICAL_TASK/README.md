@@ -1,5 +1,4 @@
 # Linguist Application
-
 ## Overview
 In this assignment, you will be creating a Linguist application that aims to facilitate the language learning process. The application will allow users to create decks of flashcards, each containing a word in English and its translation in Ukrainian, along with a tip to help them remember it.
 
