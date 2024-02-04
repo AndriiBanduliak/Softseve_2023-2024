@@ -393,10 +393,24 @@ You have two JSON files, `cars.json` and `cars2.json`, containing information ab
 
 
 
+# TASK 4.3.1
+## Function to Count Digits
+
+Here is a Python function that counts the number of digits in a number. It also checks if the input is a number and returns a message if it's not.
 
 
+# TASK 4.3.2
+This Python function takes a numeric grade (0-100) as input and returns the corresponding letter grade (A, B, C, D, or F). If the input is less than 0, it returns the message "Wrong number".
 
+# TASK 4.3.3
+# Sorting Numbers
 
+This Python function sorts three numbers using only `if-else` statements. It takes three arguments: `num1`, `num2`, and `num3`, and prints them in ascending order.
+
+# TASK 4.3.4
+## Simple Calculator
+
+This Python function emulates a simple calculator. It takes three parameters: `number1`, `number2`, and `operator`. The `operator` can be '+', '-', '*', or '/'. The function performs the corresponding calculation and returns the result. If the provided operator doesn't exist, it returns the message "Wrong operator".
 
 
 
