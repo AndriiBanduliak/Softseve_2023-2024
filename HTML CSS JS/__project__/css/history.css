@@ -1,0 +1,99 @@
+.history {
+  background-color: var(--background-color);
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.history-title__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+.history__title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  color: var(title-color);
+  margin-bottom: 20px;
+  font-family: BenchNine, sans-serif;
+}
+.history__description {
+  font-size: 19px;
+  text-align: center;
+  color: var(--description-text-color);
+  font-family: Roboto, sans-serif;
+}
+.history__list {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .history__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .history__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.history-card {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.history-card__image {
+  margin-bottom: 20px;
+  height: 277px;
+  width: 420px;
+  display: block;
+  position: relative;
+  min-height: 32px;
+  padding-top: 33.3333%;
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.history-card__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--title-color);
+  font-family: BenchNine, sans-serif;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.history-card__description {
+  font-size: 17px;
+  color: var(--text-color-light);
+  font-family: Roboto, sans-serif;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.history__link {
+  margin-top: 40px;
+  text-align: center;
+}
+.history-link__button {
+  font-size: 17px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: BenchNine, sans-serif;
+  border-bottom-width: 1.6px;
+  border-color: var(--text-color);
+}
+.history-link__button:hover {
+  background-color: var(--text-color);
+  color: var(--alternative-text-color);
+  text-decoration: none;
+}

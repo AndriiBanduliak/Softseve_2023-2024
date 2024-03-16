@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cigar Company | Blog</title>
+    <link
+      rel="shortcut icon"
+      href="img/shortcut-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav data-include="header-nav.partial.html"></nav>
+    </header>
+    <main class="main">
+      <div style="text-align: center" class="blog__content">
+        <h1 class="blog__title">Blog</h1>
+      </div>
+      <div class="blog__posts container">
+        <div class="blog__posts-nofeed">No blog posts yet...</div>
+        <div class="blog__posts-content">
+          <article class="blog__post">
+            <p>User 1</p>
+            <p>Post 1</p>
+          </article>
+          <article class="blog__post">
+            <p>User 2</p>
+            <p>Post 2</p>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer data-include="footer.partial.html"></footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script type="module" src="./js/blog.js"></script>
+  </body>
+</html>

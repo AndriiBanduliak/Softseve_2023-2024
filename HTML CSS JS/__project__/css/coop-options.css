@@ -1,0 +1,129 @@
+.cooperation {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.cooperation__title {
+    font-size: 33px;
+    text-transform: uppercase;
+    padding: 30px 0 25px 0;
+    letter-spacing: 2px;
+}
+
+.cooperation__description {
+    font-size: 19px;
+    padding: 25px 25px 0 25px;
+}
+
+.cooperation-options__description {
+    width: 68%;
+    margin-inline: auto;
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.cooperation__subtitle {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.container {
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.cooperation-consulting,
+.cooperation-tobacco,
+.cooperation-cigar {
+    padding: 15% 0 25% 0;
+    width: 90%;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.cooperation-consulting {
+    background: linear-gradient(rgba(8, 7, 7, 0.8), rgba(8, 7, 7, 0.8)), url("../img/coop-options/man-in-field.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.cooperation-tobacco {
+    background: linear-gradient(rgba(8, 7, 7, 0.8), rgba(8, 7, 7, 0.8)), url("../img/coop-options/tobacco-woman.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.cooperation-cigar {
+    background: linear-gradient(rgba(8, 7, 7, 0.8), rgba(8, 7, 7, 0.8)), url("../img/coop-options/cigars-pack.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.cooperation__button {
+    background-color: var(--button-highlight-color);
+    padding: 15px;
+    position: relative;
+    top: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media (min-width: 417px) {
+
+    .cooperation-consulting,
+    .cooperation-tobacco,
+    .cooperation-cigar {
+        max-height: 400px;
+        padding: 10% 0 20% 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .cooperation__title {
+        font-size: 40px;
+    }
+
+    .cooperation-consulting,
+    .cooperation-tobacco,
+    .cooperation-cigar {
+        max-height: 400px;
+    }
+
+    .cooperation__subtitle {
+        font-size: 25px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .cooperation__title {
+        font-size: 43px;
+    }
+
+    .cooperation-consulting,
+    .cooperation-tobacco,
+    .cooperation-cigar {
+
+   
+    }
+}
+
+@media (min-width: 1200px) {
+    .cooperation-consulting,
+    .cooperation-tobacco,
+    .cooperation-cigar {
+
+    width: 1100px;
+    }
+}

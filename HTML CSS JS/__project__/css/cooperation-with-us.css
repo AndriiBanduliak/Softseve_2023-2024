@@ -1,0 +1,50 @@
+.tobacco-cooperation {
+    background-image: url(../img/background-gray-wall.webp);
+    background-color: var(--background-color);
+    
+}
+
+.tobacco-cooperation__title {
+    font-size: 46px;
+}
+
+.tobacco-cooperation__subtitle {
+    font-size: 19px;
+    text-align: center;
+    color: var(--description-text-color);
+}
+
+.cooperation-logo {
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+.tobacco-cooperation__logo-container {
+    background-color: var(--alternative-background-color);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tobacco-cooperation__key-difference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.key-difference__title {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.key-difference__subtitle {
+    font-size: 17px;
+    color: var(--text-color);
+    margin-top: 5px;
+}

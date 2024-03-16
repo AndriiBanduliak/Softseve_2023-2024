@@ -1,0 +1,110 @@
+.contacts__container {
+    background-image: url("../img/background-gray-wall.webp");
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    line-height: 28.5px;
+    border-image-repeat: stretch;
+    border-color: var(--background-color);
+}
+
+.contacts__content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+
+    .contacts__container {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contacts__content, .contacts__form {
+        padding-left: 15px;
+        padding-right: 15px;
+        min-width: 337px;
+    }
+
+}
+
+.contacts__title {
+    font-family: "BenchNine", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.02px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 34px;
+    color: var(--title-color);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contacts__description {
+    margin-top: 20px;
+    font-weight: 400;
+    color: var(--description-text-color);
+    font-size: 19px;
+}
+
+.contacts__info-name {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-family: "BenchNine", sans-serif;
+    color: var(--title-color);
+    font-size: 22px;
+}
+
+.contact__item-address, .contact__item-phone {
+    font-size: 17px;
+}
+
+.contacts__map {
+    width: 100%; 
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-top: 30px;
+    border: 0;
+}
+
+.contacts__form {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    padding-left: 55px;
+    padding-right: 55px;
+    background-color: var(--background-color);
+}
+
+.contacts__form-required, .contacts__form-nonrequired {
+    margin-top: 20px;
+    display: flex;
+    background-color: var(--form-background-color);
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+.contact__button {
+    margin-top: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: var(--button-highlight-color);
+    font-family: "BenchNine", sans-serif;
+    color: var(--text-color);
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+}

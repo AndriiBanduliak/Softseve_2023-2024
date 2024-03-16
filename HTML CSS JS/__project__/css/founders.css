@@ -1,0 +1,44 @@
+.founders {
+    background-image: url(../img/background-gray-wall.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.founders-contein {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.founders_title {
+    font-size: 34px;
+    font-family: BenchNine, sans-serif;
+}
+.founders-descriptions {
+    color: #d0c8b9;
+}
+.founders-john {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.founders-jack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.founders-hugh {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.founders-foto {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}

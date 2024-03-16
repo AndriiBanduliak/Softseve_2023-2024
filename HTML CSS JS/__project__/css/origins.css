@@ -1,0 +1,38 @@
+.origin {
+    background-image: url(../img/origins.webp);
+    background-color: var(--background-color);
+    background-origin: border-box;
+    background-attachment: fixed;
+    padding: 95px, 0px, 100px;
+
+}
+
+h2 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.origin__subtitle {
+    color: var(--description-text-color);
+    font-size: 19px;
+    text-align: center;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+    padding: 14px;
+    display: flex;
+}
+
+.description__article {
+    color: var(--text-color);
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.index__titles-underscore {
+    text-align: center;  
+    margin: auto; 
+}

@@ -1,0 +1,199 @@
+.pricing {
+    padding: 90px 24px;
+    background:linear-gradient(rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), 
+        url(../img/pricing/pricing-background.webp);
+    background-attachment: fixed;
+    background-position: 53% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__title, .pricing__item-type, .pricing__item-price {
+    font-family: "BenchNine", sans-serif;
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pricing__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.pricing__title {
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 1.02px;
+}
+
+.pricing__title-underscore {
+    background-image: url(../img/block-title-underscore.png);
+    background-position: 50% 50%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    height: 32px;
+    width: 100%;
+}
+
+.pricing__description {
+    margin-top: 20px;
+    color: var(--description-text-color);
+    font-size: 19px;
+    line-height: 28.5px;
+    text-align: center;
+}
+
+.pricing__list {
+    margin-top: 45px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.pricing__item:first-child {
+    margin-top: 0;
+}
+
+.pricing__item {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 50px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 45px;
+    padding: 29px 27px;
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+.pricing__item-image {
+    height: 50px;
+}
+
+.pricing__item-type, .pricing__item-price{
+    font-size: 22px;
+    letter-spacing: 0.66px;
+}
+
+.pricing__item-pack {
+    color: white;
+    font-size: 17px;
+}
+
+.pricing__item-price-per {
+    font-family: "BenchNine", sans-serif;
+    letter-spacing: 0.54px;
+    color: var(--description-text-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pricing__item-divider {
+    width: 1px;
+    height: 25px;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pricing__item-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pricing__item-order, .pricing__item-order:visited {
+    display: inline-block;
+    color: var(--text-color);
+    background-color: var(--title-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 81.25px;
+    height: 48.8px;
+    border: solid 2px var(--title-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 1.28px;
+    transition: ease-in-out all 0.2s;
+}
+
+.pricing__item-order:hover, .pricing__item-order:active {
+    transition: ease-in-out all 0.2s;
+    background-color: var(--alternative-button-highlight-color);
+    border-color: var(--alternative-button-highlight-color);
+}
+
+@media (min-width: 768px) {
+    .pricing {
+        padding: 92.5px 32px 95px 32px;
+    }
+
+    .pricing__title {
+        font-size: 40px;
+        letter-spacing: 1.2px;
+    }
+
+    .pricing__item {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        row-gap: 0;
+        padding: 31px 14px;
+        margin-top: 30px;
+    }
+
+    .pricing__item-image {
+        height: 70px;
+    }
+
+    .pricing__item-type, .pricing__item-price {
+        font-size: 24px;
+    }
+
+    .pricing__item-divider {
+        height: 27px;
+    }
+
+    .pricing__item-price-per {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pricing {
+        padding: 95px 40px 100px 40px;
+    }
+
+    .pricing__title {
+        font-size: 46px;
+        letter-spacing: 1.38px;
+    }
+
+    .pricing__item {
+        padding: 35px 14px;
+        margin-top: 30px;
+    }
+
+    .pricing__item-type, .pricing__item-price {
+        font-size: 26px;
+    }
+
+    .pricing__item-divider {
+        height: 27px;
+    }
+
+    .pricing__item-price-per {
+        font-size: 21px;
+    }
+}
