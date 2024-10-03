@@ -184,3 +184,126 @@ my_gallows.play('ear')  # Outputs: ['apple', 'ear']
 my_gallows.play('corn')  # Outputs: "game over"
 ```
 
+
+## Task 18: Bible Verse Filter
+John wants to filter all the verses in a specific chapter in the Bible by their verse ID. The Bible has 66 books, each book has several chapters, and each chapter has many verses.
+
+The pattern of the verse ID is `bbcccvvv`, where:
+- `bb` is the Book ID (01 ≤ bb ≤ 66);
+- `ccc` is the Chapter ID (001 ≤ ccc);
+- `vvv` is the Verse ID (001 ≤ vvv).
+
+John wants to find verses that belong to the specific Book and Chapter given by their IDs.
+
+
+### Input:
+- `scripture`: An array of strings representing verse IDs, sorted in ascending order.
+- `book`: A string representing the Book ID (2 characters).
+- `chapter`: A string representing the Chapter ID (3 characters).
+
+### Output:
+- A filtered array of strings containing verses from the given chapter in the given book.
+
+---
+
+## Task 19: Rearrange to Form a Palindrome
+Given a string, check if its characters can be rearranged to form a palindrome. A palindrome is a string that reads the same from left to right and right to left.
+
+### Example:
+- `"trueistrue"` → `false`
+- `"abcab"` → `true` because `"abcba"` is a palindrome.
+
+### Input:
+- `s`: A string (minimum 1 letter).
+
+### Output:
+- A boolean indicating whether the characters of the string can be rearranged to form a palindrome.
+
+---
+
+## Task 20: Permutation Finder
+Given two permutations `p` and `q` of length `n`, find a permutation `r` such that for every `1 ≤ i ≤ n`, `q[i] = p[r[i]]`.
+
+### Example:
+- Input: `p = [5, 1, 3]`, `q = [3, 1, 5]`
+- Output: `r = [3, 2, 1]`
+
+### Input:
+- `p`: An array of integers representing the first permutation.
+- `q`: An array of integers representing the second permutation.
+
+### Output:
+- An array `r` representing the permutation that satisfies the condition.
+
+---
+
+## Task 21: Convert to Postfix Notation
+Convert an expression given in standard notation (infix) to postfix notation.
+
+The given expression can contain:
+- Numbers;
+- Parentheses;
+- Arithmetic operators: subtraction (`-`), addition (`+`), multiplication (`*`), division (`/`), and modulo operation (`%`).
+
+### Example:
+- For `expression = ["2", "+", "3"]`, the output should be `["2", "3", "+"]`.
+
+### Input:
+- `expression`: An array of strings representing a valid expression in standard notation.
+
+### Output:
+- An array of strings representing the expression in postfix notation.
+
+---
+
+## Task 22: Check Array Order
+Given an array of integers, determine if it is sorted in:
+- "ascending" order;
+- "descending" order;
+- or "not sorted" at all.
+
+### Example:
+- For `a = [10, 5, 4]`, the output should be `"descending"`.
+- For `a = [6, 20, 160, 420]`, the output should be `"ascending"`.
+- For `a = [1, 7, 0, 4, 8, 1]`, the output should be `"not sorted"`.
+
+### Input:
+- `a`: An array of integers (all distinct, 1 < a.length < 100).
+
+### Output:
+- A string indicating whether the array is "ascending", "descending", or "not sorted".
+
+---
+
+## Task 23: Cipher Zeros and Points
+Nicky and Dev work in a company where each member is given their income as points. On Nicky's birthday, Dev decided to gift some of his points. The number of points Dev gifts is based on the total number of visible zeros in the string representation of the `N` points he received this month.
+
+Visible zeros are calculated as follows:
+- 0, 6, and 9 contain 1 visible zero;
+- 8 contains 2 visible zeros;
+- Other digits do not contain visible zeros.
+
+Nicky receives the same number of points as the visible zeros, but if the number is odd, the company adds 1 point to Nicky's gift. If the number is even and greater than 0, Nicky must give 1 point to the company.
+
+### Example:
+For `N = "565"`, the output should be `10` (binary), because Nicky receives 2 points after the adjustment.
+
+### Input:
+- `N`: A string representing the points Dev received this month (1 ≤ N ≤ 10^1000).
+
+### Output:
+- The number of points Nicky will receive as a gift, returned in binary format.
+
+---
+
+## Task 24: Maximum Non-decreasing Subarray Length
+Nicky has an array of studying hours per day for previous exams. He wants to know the length of the maximum non-decreasing contiguous subarray to help study for his current exams.
+
+### Example:
+For `a = [2, 2, 1, 3, 4, 1]`, the answer is `3`.
+
+### Input:
+- `a`: An array of integers representing the number of hours studied each day.
+
+### Output:
+- The length of the maximum non-decreasing contiguous subarray.
