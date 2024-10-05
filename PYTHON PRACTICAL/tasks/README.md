@@ -307,3 +307,118 @@ For `a = [2, 2, 1, 3, 4, 1]`, the answer is `3`.
 
 ### Output:
 - The length of the maximum non-decreasing contiguous subarray.
+
+# Task 25
+### Problem: Valid Email Address
+
+Write the function `valid_email(...)` to check if the input string is a valid email address or not.
+
+- **Conditions**: 
+  - An email is a string (a subset of ASCII characters) separated into two parts by the `@` symbol, a “user_info” and a “domain_info” (personal_info@domain_info).
+  - In case of correct email, the function should display the corresponding message: **"Email is valid"**.
+  - In case of incorrect email, the function should display the corresponding message: **"Email is not valid"**.
+
+- **Note**: In the function, you must use the **"try-except"** construct.
+
+---
+
+# Task 26
+### Problem: Sum of Slice in Array
+
+Write the function `sum_slice_array(arr, first, second)` which accepts the array (list) `arr` and two numbers `first` and `second`, which represent the ordinal numbers of elements in the array that must be added. 
+
+- For example, if 3 and 5 were entered, the 3rd and 5th elements must be added.
+
+- **Exception Handling**: 
+  - The function should raise exceptions `MyExceptions`:
+    - If non-numbers or numbers less than 1 were entered.
+    - If non-numbers were obtained from the array.
+    - If one of the numbers or both are larger than the array length.
+
+---
+
+# Task 27
+### Problem: Tangent of Alpha with Logging
+
+Solve the problem of finding the tangent of the angle alpha given the sine of alpha and the cosine of alpha, and log the events in the "app.log" file.
+
+- **Logging Levels**:
+  - Log the resulting sine and cosine values at the **"info"** level.
+  - Log successful calculation of the tangent at the **"debug"** level.
+  - If cosine alpha = 0, log a **"warning"** with the message: **"The cosine of the angle alpha = 0. The tangent is not defined."**
+  - If the tangent is not defined, log a **"critical"** with the message: **"The tangent of the angle alpha is not defined."**
+
+- Formula: 
+  - `tan(α) = sin(α) / cos(α)`
+
+- **Note**: Do not use `print()`, `return`, or `encoding='utf-8'`.
+
+---
+
+# Task 28
+### Problem: Solve Quadratic Equation
+
+Write the function `solve_quadric_equation(a, b, c)` where the three input parameters `a, b, c` are numbers, and the function solves the quadratic equation:
+
+- **Equation**: ax² + bx + c = 0
+
+- **Conditions**:
+  - If the data is correct, the function should display: **"The solutions are x1=… and x2=…"**.
+  - In case of division by zero, display: **"Zero Division Error"**.
+  - If data is incorrect, display: **"Could not convert string to float"**.
+
+- **Function Examples**:
+  ```python
+  solve_quadric_equation(1, 5, 6)    # Output: "The solutions are x1=(-2-0j) and x2=(-3+0j)"
+  solve_quadric_equation(0, 8, 1)    # Output: "Zero Division Error"
+  solve_quadric_equation(1, "abc", 5) # Output: "Could not convert string to float"
+
+# Task 29: Day of the Week
+### Problem
+
+Write a function `day_of_week(day)` where the input parameter is either a number or a string representation of a number. The function should return the corresponding day of the week if the input is in the range of 1 to 7.
+
+- **Cases**:
+  - If the input is **5**, the function should display the message: `"Friday"`.
+  - If the input is not in the range 1 to 7, the function should display: `"There is no such day of the week! Please try again."`.
+  - If incorrect data is provided, display: `"You did not enter a number! Please try again."`.
+
+- **Note**: The function must use the **"try-except"** construct for error handling.
+
+
+
+# Task 30: Calculator with Exception Handling
+
+### Problem
+
+We have a function `calc(a, b, op)` (as shown in the screenshot).
+
+Write your code inside `run_calc`, where the function `calc` is called. The script must handle any kind of arguments passed to `calc`. Additionally, you need to implement proper exception handling for the following cases:
+
+- **Exception Handling**:
+  - Catch `ValueError` and print the error message.
+  - Catch `TypeError` and print `"TypeError"`.
+  - Catch division by zero and print `"Division by zero"`.
+  - After calling `calc`, print `"End of calculation"` in all cases, even if an exception is raised.
+
+# Task 31: Check Number Group
+
+### Problem
+
+Write a function `check_number_group(number)` where the input parameter is a number. The function checks whether the input number is greater than 10.
+
+### Requirements:
+- If the number is **greater than 10**, the function should display:  
+  `"Number of your group (number) is valid"`.
+  
+- If the number is **less than or equal to 10**, the function should raise an exception of your own class `ToSmallNumberGroupError` and display:  
+  `"We obtain error: Number of your group can't be less than 10"`.
+  
+- In the case of **incorrect data**, the function should display:  
+  `"You entered incorrect data. Please try again."`.
+
+- **Note**: The function should handle invalid inputs using the **"try-except"** construct and raise a custom exception for numbers that are too small.
+
+
+
+
