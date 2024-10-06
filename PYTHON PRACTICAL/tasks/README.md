@@ -422,3 +422,74 @@ Write a function `check_number_group(number)` where the input parameter is a num
 
 
 
+
+
+# Task 32: `find(file, key)` Function
+
+### Description:
+This function parses a JSON file and returns all **unique values** of the specified key.
+
+
+
+
+# Task 33: Function `parse_user`
+
+Implement the function `parse_user(output_file, *input_files)` to create a file that contains only unique records (unique by the key "name") by merging information from all `input_files` arguments. If a user with an already existing name from a previous file is found, it should be ignored. Use pretty printing for writing users to the JSON file.
+
+If the function cannot find the input files, log the information with an error level:
+
+
+# Task 34
+In user.json file we have information about users in format [{“id”: 1, “name”: “userName”, “department_id”: 1}, ...], 
+
+in file department.json are information about departments in format: [{“id”: 1, “name”: “departmentName”}, ...]. 
+
+Function user_with_department(csv_file, user_json, department_json) should read from json files information and create csv file in format:
+
+header line - name, department
+
+next lines :  <userName>, <departmentName>
+
+If file department.json doesn't contain department with department_id from user.json we generate DepartmentName exception.
+
+Create appropriate json-schemas for user and department.
+
+If schema for user or department doesn't satisfy formats described above we should generate InvalidInstanceError exception  
+
+To validate instances create function validate_json(data, schema)
+
+
+# Task 35
+
+Class Student has attributes full_name:str, avg_rank: float, courses: list
+Class Group has attributes title: str, students: list.
+
+Make both classes JSON serializable. 
+
+Json-files represent information about student (students). 
+
+Create methods:  
+
+Student.from_json(json_file) that return Student instance from attributes from json-file;
+
+Student.serialize_to_json(filename)
+
+Group.serialize_to_json(list_of_groups, filename)
+
+Group.create_group_from_file(students_file)
+
+Parse given files, create instances of Student class and create instances of Group class (title for group is name of json-file without extension).
+
+
+# Task 36
+
+Create context manager class SerializeManager with attributes filename and type for serializing python object to different formats.
+This class should contain method serialize for serialize object to filename according to  type. 
+For defining format create enum FileType with values JSON, BYTE.
+Create function serialize(object, filename, filetype).
+This function use SerializeManager and should serialize object to filename according to type.
+For example:
+if user_dict = { 'name': 'Roman', 'id': 8}
+then
+serialize(user_dict, "2", FileType.BYTE) -> creates file with name "2" and this file will contain user_dict as byte array
+serialize("String", "string.json", FileType.JSON) -> creates file with name "string.json" and text "String"
