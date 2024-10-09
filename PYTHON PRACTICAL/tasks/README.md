@@ -535,3 +535,12 @@ For solving the problem described above, you can use the Adapter Method that hel
 1. **Client** should make a request to the adapter by calling a method on it using the target interface.
 2. Using the **Adaptee** interface, the Adapter should translate that request on the adaptee.
 3. The result of the call is received by the client, and they are unaware of the Adapter’s presence.
+
+
+## Task 40
+
+Imagine we have a washing machine which can wash the clothes, rinse the clothes, and spin the clothes but all the tasks separately. We need a system that can automate the whole task without the disturbance or interference of us.
+
+### Solution
+
+To solve the above-described problem, we would like to use the Facade Method. It will help us to hide or abstract the complexities of the subsystems as follows
