@@ -308,7 +308,7 @@ For `a = [2, 2, 1, 3, 4, 1]`, the answer is `3`.
 ### Output:
 - The length of the maximum non-decreasing contiguous subarray.
 
-# Task 25
+## Task 25
 ### Problem: Valid Email Address
 
 Write the function `valid_email(...)` to check if the input string is a valid email address or not.
@@ -322,7 +322,7 @@ Write the function `valid_email(...)` to check if the input string is a valid em
 
 ---
 
-# Task 26
+## Task 26
 ### Problem: Sum of Slice in Array
 
 Write the function `sum_slice_array(arr, first, second)` which accepts the array (list) `arr` and two numbers `first` and `second`, which represent the ordinal numbers of elements in the array that must be added. 
@@ -337,7 +337,7 @@ Write the function `sum_slice_array(arr, first, second)` which accepts the array
 
 ---
 
-# Task 27
+## Task 27
 ### Problem: Tangent of Alpha with Logging
 
 Solve the problem of finding the tangent of the angle alpha given the sine of alpha and the cosine of alpha, and log the events in the "app.log" file.
@@ -493,3 +493,30 @@ if user_dict = { 'name': 'Roman', 'id': 8}
 then
 serialize(user_dict, "2", FileType.BYTE) -> creates file with name "2" and this file will contain user_dict as byte array
 serialize("String", "string.json", FileType.JSON) -> creates file with name "string.json" and text "String"
+
+
+
+## Task 37
+
+You have to create a main course and a dessert at an Italian and a French restaurant, but you won't mix one cuisine with the other.
+
+### Your task is:
+
+1. Define a class `Product` with an abstract method `cook()`. This class would be the base class for the next classes:
+    - `class FettuccineAlfredo` with field `name` ("Fettuccine Alfredo"), method `cook()` provides an output of the formatted string "Italian main course prepared: " and name of the dish;
+    - `class Tiramisu`, with field `name` ("Tiramisu"), method `cook()` provides an output of the formatted string "Italian dessert prepared: " and name of the dish;
+    - `class DuckALOrange`, with field `name` ("Duck À L'Orange"), method `cook()` provides an output of the formatted string "French main course prepared: " and name of the dish;
+    - `class CremeBrulee`, with field `name` ("Crème brûlée"), method `cook()` provides an output of the formatted string "French dessert prepared: " and name of the dish.
+
+2. Define a class `Factory` with an abstract method `get_dish()` that takes `type_of_meal` as a parameter. This class would be the base class for the classes `ItalianDishesFactory` and `FrenchDishesFactory`. The method `get_dish()` according to `type_of_meal` ("main" or "dessert") invokes the dish of appropriate cuisine.
+
+3. Define a class `FactoryProducer` with the method `get_factory()`. The method takes the parameter `type_of_factory` and invokes the appropriate dishes factory (classes `ItalianDishesFactory` or `FrenchDishesFactory`).
+
+
+## Task 38
+
+Your task is to create an application for the departmental store. Initially, there was one and only one type of discount called the On-Sale-Discount (50%). But as time passes, the owner of the departmental store demands for including some other types of discount also for the customers.
+
+### Solution
+
+To solve this problem efficiently, we can use the Strategy design pattern. This pattern allows us to define a family of algorithms, encapsulate each one, and make them interchangeable. The strategy pattern lets the algorithm vary independently from clients that use it.
