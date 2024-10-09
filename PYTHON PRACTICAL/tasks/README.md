@@ -544,3 +544,12 @@ Imagine we have a washing machine which can wash the clothes, rinse the clothes,
 ### Solution
 
 To solve the above-described problem, we would like to use the Facade Method. It will help us to hide or abstract the complexities of the subsystems as follows
+
+
+## Task 41
+
+Imagine we are studying an organizational structure which consists of General Managers, Managers, and Developers. A General Manager may have many Managers working under him and a Manager may have many developers under him. Suppose, you have to determine the total salary of all the employees.
+
+### Solution
+
+One of the best solutions to the above-described problem is using the Composite Method by working with a common interface that declares a method for calculating the total salary.
