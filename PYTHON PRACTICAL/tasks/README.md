@@ -520,3 +520,18 @@ Your task is to create an application for the departmental store. Initially, the
 ### Solution
 
 To solve this problem efficiently, we can use the Strategy design pattern. This pattern allows us to define a family of algorithms, encapsulate each one, and make them interchangeable. The strategy pattern lets the algorithm vary independently from clients that use it.
+
+
+## Task 39
+
+Imagine you are creating an application that shows the data about all different types of vehicles present. It takes the data from APIs of different vehicle organizations in XML format and then displays the information. But suppose at some time you want to upgrade your application with a Machine Learning algorithm that works beautifully on the data and fetches the important data only. But there is a problem, it takes data in JSON format only. It will be a really poor approach to make changes in the Machine Learning Algorithm so that it will take data in XML format.
+
+### Solution
+
+For solving the problem described above, you can use the Adapter Method that helps by creating an Adapter object.
+
+#### How to Use an Adapter in Your Code
+
+1. **Client** should make a request to the adapter by calling a method on it using the target interface.
+2. Using the **Adaptee** interface, the Adapter should translate that request on the adaptee.
+3. The result of the call is received by the client, and they are unaware of the Adapter’s presence.
