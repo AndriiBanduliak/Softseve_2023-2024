@@ -536,20 +536,104 @@ For solving the problem described above, you can use the Adapter Method that hel
 2. Using the **Adaptee** interface, the Adapter should translate that request on the adaptee.
 3. The result of the call is received by the client, and they are unaware of the Adapter’s presence.
 
+## Task 40: Washing Machine Automation
 
-## Task 40
+### Description:
+We have a washing machine that can perform washing, rinsing, and spinning tasks separately. The task is to automate the entire process without user interference, allowing all steps to be executed in sequence.
 
-Imagine we have a washing machine which can wash the clothes, rinse the clothes, and spin the clothes but all the tasks separately. We need a system that can automate the whole task without the disturbance or interference of us.
+### Solution:
+To solve this task, we use the **Facade pattern**, which helps hide the complexities of the subsystems and provides a simplified interface to manage the washing, rinsing, and spinning processes.
 
-### Solution
+---
 
-To solve the above-described problem, we would like to use the Facade Method. It will help us to hide or abstract the complexities of the subsystems as follows
+## Task 41: Organizational Structure and Salary Calculation
 
+### Description:
+We are studying an organizational structure consisting of General Managers, Managers, and Developers. Each General Manager oversees several Managers, and each Manager supervises multiple Developers. The task is to calculate the total salary of all employees in the company.
 
-## Task 41
+### Solution:
+This task was solved using the **Composite pattern**, which allows working with groups of objects through a common interface. This enables easy summation of all employees' salaries regardless of their position in the hierarchy.
 
-Imagine we are studying an organizational structure which consists of General Managers, Managers, and Developers. A General Manager may have many Managers working under him and a Manager may have many developers under him. Suppose, you have to determine the total salary of all the employees.
+---
 
-### Solution
+## Task 42: Total Price Calculation with Discount
 
-One of the best solutions to the above-described problem is using the Composite Method by working with a common interface that declares a method for calculating the total salary.
+### Description:
+Create a program that calculates the total price of products in a cart, applying discounts based on the total number of products.
+
+### Discount Conditions:
+- From 5 products — 5% discount
+- From 7 products — 10% discount
+- From 10 products — 20% discount
+- From 20 products — 30% discount
+- More than 20 products — 50% discount
+
+### Solution:
+The `Cart` class is used to add products and calculate the total price with applicable discounts based on the number of items.
+
+---
+
+## Task 43: Testing the Divide Function
+
+### Description:
+A function `divide` is given, which takes two numbers and returns their quotient. The task is to write unit tests to check various scenarios, including division by zero.
+
+### Solution:
+Multiple tests are implemented, including checks for division of positive and negative numbers, as well as handling division by zero.
+
+---
+
+## Task 44: Solving a Quadratic Equation
+
+### Description:
+Write a function that solves a quadratic equation of the form `ax² + bx + c = 0` without considering complex solutions. Test the function for three cases: discriminant less than zero, equal to zero, and greater than zero.
+
+### Solution:
+Unit tests are implemented to cover all three possible scenarios of the quadratic equation's discriminant.
+
+---
+
+## Task 45: Triangle Class and Area Calculation
+
+### Description:
+Create a class `Triangle` with a method `get_area()` that calculates the area of a triangle based on its side lengths provided as a list. Additionally, implement validations for the triangle's sides.
+
+### Exceptions:
+- If the sides do not form a valid triangle, raise `TriangleNotExistException`.
+- For invalid arguments, raise `TriangleNotValidArgumentException`.
+
+### Solution:
+Tests were written to check both valid and invalid input data, including checks for triangle inequality.
+
+---
+
+## Task 46: Worker Class and Progressive Tax Calculation
+
+### Description:
+Create a `Worker` class with fields `name` and `salary`. If the salary is negative, raise a `ValueError`. Add a method `get_tax_value()` that calculates tax based on progressive tax brackets:
+
+### Tax Conditions:
+- Less than 1000 — 0%
+- 1001 - 3000 — 10%
+- 3001 - 5000 — 15%
+- 5001 - 10000 — 21%
+- 10001 - 20000 — 30%
+- 20001 - 50000 — 40%
+- More than 50000 — 47%
+
+### Solution:
+Unit tests were written to ensure the correct calculation of tax based on the salary.
+
+---
+
+## Task 47: File Parser Function
+
+### Description:
+Write a `file_parser` function that takes two or three arguments. If two arguments are provided, the function should count the number of occurrences of a string in a file. If three arguments are provided, the function should replace the string in the file with a new one.
+
+### Example:
+- `file_parser("file.txt", 'x', 'o')` → Replaced 8 strings
+- `file_parser("file.txt", 'o')` → Found 8 strings
+
+### Solution:
+Tests were written using mock objects to verify the function's behavior with different input cases.
