@@ -1,0 +1,31 @@
+name: HTML Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  html-validation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0'
+        
+    - name: Install HTML Proofer
+      run: gem install html-proofer
+      
+    - name: Validate HTML
+      run: |
+        htmlproofer "HTML CSS JS/__project__/" \
+          --allow-hash-href \
+          --check-html \
+          --check-img-http \
+          --check-opengraph \
+          --disable-external
